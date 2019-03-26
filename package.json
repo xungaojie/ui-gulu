@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/jie-uncle/ui-gulu/issues"
   },
-  "homepage": "https://github.com/jie-uncle/ui-gulu#readme"
+  "homepage": "https://github.com/jie-uncle/ui-gulu#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
 }

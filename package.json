@@ -1,0 +1,23 @@
+{
+  "name": "gulu",
+  "version": "0.0.1",
+  "description": "一个vue组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jie-uncle/ui-gulu.git"
+  },
+  "keywords": [
+    "vue",
+    "ui"
+  ],
+  "author": "jie-uncle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jie-uncle/ui-gulu/issues"
+  },
+  "homepage": "https://github.com/jie-uncle/ui-gulu#readme"
+}

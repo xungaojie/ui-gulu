@@ -3,6 +3,8 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>轱辘</title>
 	<style>
 		* {
@@ -18,26 +20,30 @@
 			--button-active-bg: #eee;
 			--border-radius: 4px;
 			--color: '#333';
+			--hover-color:#096dd9;
 			--border-color: #999;
-			--border-color-hover: #666;
+			--border-color-hover: #096dd9;
 		}
-
-		.icon {
-			width: 1em;
-			height: 1em;
-			vertical-align: middle;
-		}
-
 		body {
 			margin: 20px
 		}
 	</style>
-	<script src="//at.alicdn.com/t/font_1122643_5qjutyplcf3.js"></script>
+	<script src="//at.alicdn.com/t/font_1122643_nslt21lyh4.js"></script>
 </head>
 
 <body>
 	<div id="app">
-		<g-button>{{message}}</g-button>
+		<g-button icon="setting" icon-position="right">{{message}}</g-button>
+		<g-button icon="setting" @click.native="handleButtonClick">{{message}}</g-button>
+		<g-button icon="loading">傻逼</g-button>
+		<g-button-group>
+			<g-button icon="prex" >向左</g-button>
+			<g-button icon="loading">傻逼</g-button>
+			<g-button icon="next" icon-position="right">向右</g-button>
+		</g-button-group>
+
+
+
 	</div>
 	<script src="./src/app.js"></script>
 </body>

@@ -1,6 +1,6 @@
 <template>
-	<button class="g-button" @mouseup = "handleMouseUp" :class="[`icon-${iconPosition}`]" :gulu-click-animating-without-extra-node = 'animation'>
-		<g-icon class="g-icon" @click="handleClick" :class="{loading:loading || icon === 'loading'}" :name='icon'></g-icon>
+	<button class="g-button"  @click="handleClick" @mouseup = "handleMouseUp" :class="[`icon-${iconPosition}`]" :gulu-click-animating-without-extra-node = 'animation'>
+		<g-icon class="g-icon" :class="{loading:loading || icon === 'loading'}" :name='loading?"loading":icon'></g-icon>
 		<div class="content">
 			<slot></slot>
 		</div>
@@ -40,7 +40,7 @@ export default {
 	}
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 @keyframes loading {
 	0%{ transform: rotate(0deg); }
 	100%{ transform: rotate(360deg); }
